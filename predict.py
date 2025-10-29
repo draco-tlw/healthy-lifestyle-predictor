@@ -59,4 +59,4 @@ y_proba = model.predict_proba(x)[:, 1]
 print(f"Input features: {data_point.tolist()}")
 print("---")
 print(f"Predicted health risk: {'high' if y[0] == 1 else 'low'}")
-print(f"Predicted health risk proba: {y_proba[0]:.2f}")
+print(f"Predicted health risk probability: {y_proba[0]:.2f}")

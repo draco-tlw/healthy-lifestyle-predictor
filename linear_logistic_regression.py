@@ -24,13 +24,13 @@ print(f"Model saved successfully to '{model_name}.joblib'")
 
 y_predict_classes = model.predict(x_train)
 
-y_predict_probabilities = model.predict_proba(x_train)[:, 1]
+y_predict_probability = model.predict_proba(x_train)[:, 1]
 
 plot(
     x_train,
     y_train,
-    y_predict_probabilities,
+    y_predict_probability,
     model_name,
     model_name,
 )
-calculate_costs(y_train, y_predict_probabilities)
+calculate_costs(y_train, y_predict_probability)
